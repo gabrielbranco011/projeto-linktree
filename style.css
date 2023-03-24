@@ -44,22 +44,15 @@ body * {
   margin-top: 8px;
 }
 
-/* links */
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 24px 0;
-}
 
-ul li a {
-  display: flex;
-  align-items: center;
+.links {
+  display: flex; 
   justify-content: center;
+  /* align items to the left */
   padding: 16px 24px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -67,11 +60,15 @@ ul li a {
   font-weight: 500;
   transition: background 0.5s;
 }
+.link-personal a {
+  text-align: center;
+  flex: 1; /* this will make the link take up all available space */
+}
 
-/* pseudo-selector */
-ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid var(--text-color);
+.icon {
+  display: flex;
+  justify-content: flex-start; /* align the icon to the left */
+  margin-right: 16px; /* add some margin to separate the icon from the link */
 }
 
 /* social-links */
@@ -79,7 +76,6 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   gap: 32px;
-
   padding: 24px 0;
   font-size: 24px;
 }
