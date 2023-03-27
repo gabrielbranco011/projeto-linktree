@@ -10,7 +10,7 @@
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(225, 225, 255, 0.5);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --switch-bg-url: url(./assets/moon-stars.svgl);
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
@@ -19,7 +19,7 @@
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.5);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --switch-bg-url: url(./assets/sun.svgl);
+  --switch-bg-url: url(./assets/sun.svg);
 }
 
 body {
