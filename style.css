@@ -55,11 +55,10 @@ body * {
 
 /* switch */
 #switch {
-width: 64px;
-position: relative;
+  width: 64px;
+  position: relative;
 
-margin: 8px auto;
-
+  margin: 8px auto;
 }
 #switch button {
   width: 32px;
@@ -70,21 +69,25 @@ margin: 8px auto;
 
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 0;
   z-index: 1;
   transform: translateY(-50%);
+}
 
+.light #switch button {
+  right: 0;
+  left: initial;
 }
 
 #switch span {
-  display: block; 
- width: 64px;
- height: 24px;
-background: var(--surface-color);
-border: 1px solid var(--stroke-color);
-backdrop-filter: blur(4px);
--webkit-backdrop-filter: blur(4px);
-border-radius: 9999px;
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
 
 .links {
