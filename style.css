@@ -125,3 +125,15 @@ body * {
   padding: 24px 0;
   font-size: 24px;
 }
+
+/* media queries */
+@media (min-width: 700px) {
+  :root {
+  --bg-url: url(./assets/bg-desktop.jpg);
+  }
+ .light {
+  --bg-url: url(./assets/bg-desktop-light.jpg);
+ }
+}
+
+
